@@ -1,0 +1,20 @@
+html = """
+<html> 
+    <head>
+        <title></title>
+    </head>
+    <body>
+    <h1>I <3 Mäniii</h1>
+    </body>
+</html>
+
+
+"""
+print(html)
+
+#Write HTML String to file.html
+with open("index.html", "w") as file:
+    file.write(html) 
+import webbrowser
+#Öffne die Datei im Standard Web browser
+webbrowser.open("index.html")
